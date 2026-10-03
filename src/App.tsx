@@ -45,7 +45,7 @@ const services = [
       'Impact sound insulation',
       'Façade acoustic assessment'
     ],
-    pointerColor: '#bd6a3a'
+    pointerColor: '#071952' // Deep Navy Blue
   },
   {
     id: 2,
@@ -71,7 +71,7 @@ const services = [
       'Breakout noise assessment',
       'Outdoor noise assessment.'
     ],
-    pointerColor: '#1e3a8a' // Dark blue
+    pointerColor: '#088395' // Deep Teal
   },
   {
     id: 3,
@@ -91,7 +91,7 @@ const services = [
       'Noise mitigation',
       'Sound transmission analysis'
     ],
-    pointerColor: '#87ceeb' // Light blue
+    pointerColor: '#37B7C3' // Light Teal / Cyan
   },
   {
     id: 4,
@@ -111,7 +111,7 @@ const services = [
       'Background noise measurement',
       'Room acoustic assessment'
     ],
-    pointerColor: '#ffffff' // White
+    pointerColor: '#EBF4F6' // Ice White
   }
 ];
 
@@ -674,7 +674,7 @@ function Footer() {
   return (
     <footer className="relative flex flex-col items-center justify-center overflow-hidden bg-[hsl(var(--primary))] pt-24 md:pt-32 pb-0 text-[hsl(var(--primary-foreground))]">
       <div 
-        className="container-nx relative z-10 w-full rounded-[32px] bg-[hsl(var(--background))] p-8 md:pt-10 md:px-12 md:pb-6 text-[hsl(var(--foreground))] shadow-[0_40px_100px_rgba(40,30,20,0.25),0_15px_40px_rgba(40,30,20,0.15)]"
+        className="container-nx relative z-10 w-full rounded-[32px] bg-[hsl(var(--background))] p-8 md:pt-10 md:px-12 md:pb-6 text-[hsl(var(--foreground))] shadow-[0_40px_100px_rgba(7,25,82,0.25),0_15px_40px_rgba(7,25,82,0.15)]"
       >
         
         {/* Top CTA Banner */}

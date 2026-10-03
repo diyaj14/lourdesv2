@@ -48,58 +48,57 @@ export type ArrowFillButtonProps = ArrowFillButtonOwnProps &
     keyof ArrowFillButtonOwnProps
   >;
 
-// Website-aligned color presets matching Nexora Acoustic theme
-// The indicator circle and hover fill match the warm limestone card color of the About Us box (#f7f4ee / hsl(var(--card))) with deep architectural timber arrow and text
+// Website-aligned color presets matching Nexora Acoustic navy blue and white theme
 const VARIANT_COLORS = {
   primary: {
-    bgColor: "#1b1614", // Deep architectural charcoal timber
-    textColor: "#f6efe8", // Warm limestone
-    fillBgColor: "#f7f4ee", // Exact About Us card color for the circle surrounding arrow
-    fillTextColor: "#1b1614",
-    hoverFillBgColor: "#f7f4ee", // Exact About Us card color on hover
-    hoverFillTextColor: "#1b1614", // Deep architectural timber text matching About Us box
-    arrowColor: "#1b1614", // Deep architectural timber arrow icon
-    hoverArrowColor: "#1b1614",
+    bgColor: "#071952", // Deep navy blue
+    textColor: "#EBF4F6", // Crisp white
+    fillBgColor: "#EBF4F6", // Crisp white indicator circle surrounding arrow
+    fillTextColor: "#071952", // Deep navy arrow
+    hoverFillBgColor: "#EBF4F6", // Crisp white expands to fill button on hover
+    hoverFillTextColor: "#071952", // Deep navy text on hover
+    arrowColor: "#071952", // Deep navy arrow icon
+    hoverArrowColor: "#071952",
   },
   default: {
-    bgColor: "#1b1614",
-    textColor: "#f6efe8",
-    fillBgColor: "#f7f4ee", // Exact About Us card color for the circle surrounding arrow
-    fillTextColor: "#1b1614",
-    hoverFillBgColor: "#f7f4ee", // Exact About Us card color on hover
-    hoverFillTextColor: "#1b1614",
-    arrowColor: "#1b1614",
-    hoverArrowColor: "#1b1614",
+    bgColor: "#071952",
+    textColor: "#EBF4F6",
+    fillBgColor: "#EBF4F6",
+    fillTextColor: "#071952",
+    hoverFillBgColor: "#EBF4F6",
+    hoverFillTextColor: "#071952",
+    arrowColor: "#071952",
+    hoverArrowColor: "#071952",
   },
   copper: {
-    bgColor: "#8f6248", // Warm timber brown
-    textColor: "#ffffff",
-    fillBgColor: "#f7f4ee", // Exact About Us card color
-    fillTextColor: "#1b1614",
-    hoverFillBgColor: "#f7f4ee", // Exact About Us card color on hover
-    hoverFillTextColor: "#1b1614",
-    arrowColor: "#1b1614",
-    hoverArrowColor: "#1b1614",
+    bgColor: "#088395", // Deep ocean teal
+    textColor: "#EBF4F6",
+    fillBgColor: "#EBF4F6",
+    fillTextColor: "#088395",
+    hoverFillBgColor: "#37B7C3", // Light cyan on hover
+    hoverFillTextColor: "#071952",
+    arrowColor: "#088395",
+    hoverArrowColor: "#071952",
   },
   accent: {
-    bgColor: "#8f6248",
-    textColor: "#ffffff",
-    fillBgColor: "#f7f4ee", // Exact About Us card color
-    fillTextColor: "#1b1614",
-    hoverFillBgColor: "#f7f4ee", // Exact About Us card color on hover
-    hoverFillTextColor: "#1b1614",
-    arrowColor: "#1b1614",
-    hoverArrowColor: "#1b1614",
+    bgColor: "#088395", // Deep ocean teal
+    textColor: "#EBF4F6",
+    fillBgColor: "#EBF4F6",
+    fillTextColor: "#088395",
+    hoverFillBgColor: "#37B7C3",
+    hoverFillTextColor: "#071952",
+    arrowColor: "#088395",
+    hoverArrowColor: "#071952",
   },
   quiet: {
-    bgColor: "#eee5d8", // Warm limestone surface
-    textColor: "#1b1614", // Deep timber text
-    fillBgColor: "#f7f4ee", // Exact About Us card color
-    fillTextColor: "#1b1614",
-    hoverFillBgColor: "#f7f4ee", // Exact About Us card color on hover
-    hoverFillTextColor: "#1b1614",
-    arrowColor: "#1b1614",
-    hoverArrowColor: "#1b1614",
+    bgColor: "#EBF4F6", // Pale icy white surface
+    textColor: "#071952", // Deep navy text
+    fillBgColor: "#071952", // Navy circle surrounding arrow
+    fillTextColor: "#EBF4F6", // White arrow
+    hoverFillBgColor: "#071952", // Deep navy expands on hover
+    hoverFillTextColor: "#EBF4F6", // Crisp white text on hover
+    arrowColor: "#EBF4F6",
+    hoverArrowColor: "#EBF4F6",
   },
 };
 

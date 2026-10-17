@@ -23,7 +23,7 @@ import { TiltCard } from '@/components/ui/tilt-card';
 import { cn } from '@/lib/utils';
 import { V3AccordionCard } from '@/components/ui/services-versions';
 const queryClient = new QueryClient();
-const auditorium = '/assets/futuristic-teal-concert-hall-piano.webp';
+const heroBanner = '/assets/Advanced Acoustic Solutions Banner.png';
 
 const services = [
   {
@@ -339,7 +339,7 @@ function Hero() {
 
           {/* Mobile responsive image display */}
           <div className="mt-8 relative w-full h-[280px] sm:h-[380px] overflow-hidden rounded-2xl lg:hidden">
-            <img src={auditorium} alt="Futuristic teal concert hall with grand piano and sound diffusion architecture" className="cinematic-img h-full w-full object-cover object-center scale-[1.01]" referrerPolicy="no-referrer" data-testid="img-hero-auditorium-mobile" />
+            <img src={heroBanner} alt="Advanced Acoustic Solutions Banner - Nexora Acoustic Engineering" className="cinematic-img h-full w-full object-cover object-center scale-[1.01]" referrerPolicy="no-referrer" data-testid="img-hero-banner-mobile" />
             <div className="absolute bottom-4 left-4 flex items-center gap-2.5 bg-[hsl(var(--background)/92%)] backdrop-blur-sm px-3 py-1.5 border border-[hsl(var(--border))] rounded-lg">
               <span className="h-2 w-2 rounded-full bg-[hsl(var(--accent))]" />
               <span className="mono text-[.55rem]">Sound, shaped by space</span>
@@ -349,7 +349,7 @@ function Hero() {
         
         {/* Desktop right-aligned image as a rounded floating card */}
         <div className="hidden lg:block lg:col-span-6 xl:col-span-6 relative h-[55vh] min-h-[450px] max-h-[700px] mt-6 lg:mt-10 xl:mt-14 -ml-4 -mr-4 lg:-ml-8 lg:-mr-6 xl:-ml-10 xl:-mr-8 rounded-[2rem] overflow-hidden bg-transparent">
-          <img src={auditorium} alt="Futuristic teal concert hall with grand piano and sound diffusion architecture" className="hero-image cinematic-img h-full w-full object-cover object-center scale-[1.01]" referrerPolicy="no-referrer" data-testid="img-hero-auditorium" />
+          <img src={heroBanner} alt="Advanced Acoustic Solutions Banner - Nexora Acoustic Engineering" className="hero-image cinematic-img h-full w-full object-cover object-center scale-[1.01]" referrerPolicy="no-referrer" data-testid="img-hero-banner" />
           <div className="absolute bottom-6 right-6 flex items-center gap-3 bg-[hsl(var(--background)/92%)] backdrop-blur-md px-4 py-2 rounded-xl border border-[hsl(var(--border))] text-[hsl(var(--foreground))] shadow-md">
             <span className="h-2 w-2 rounded-full bg-[hsl(var(--accent))]" />
             <span className="mono text-[.58rem]">Sound, shaped by space</span>
@@ -688,7 +688,7 @@ function Footer() {
 
         <div className="grid gap-8 md:grid-cols-12">
           
-          <div className="md:col-span-7 lg:col-span-6 flex flex-col">
+          <div className="md:col-span-5 lg:col-span-5 flex flex-col">
             <Logo />
             <div className="mt-6">
               <h3 className="display text-[1.6rem] leading-[1.15]">Acoustic engineering<br />for better-performing spaces.</h3>
@@ -708,7 +708,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-5 lg:col-span-6 grid grid-cols-2 gap-6 md:pl-12 pt-2">
+          <div className="md:col-span-7 lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6 md:pl-8 pt-2">
             <div className="flex flex-col gap-4">
               <h4 className="font-bold text-[.85rem] tracking-wide uppercase text-[hsl(var(--muted-foreground))]">Services</h4>
               <div className="flex flex-col gap-3 text-[.85rem] font-medium text-[hsl(var(--foreground))]">
@@ -727,15 +727,34 @@ function Footer() {
                 <a href="#contact" className="hover:text-[hsl(var(--accent))] transition-colors">Contact</a>
               </div>
             </div>
+
+            <div className="flex flex-col gap-4">
+              <h4 className="font-bold text-[.85rem] tracking-wide uppercase text-[hsl(var(--muted-foreground))]">Contact</h4>
+              <div className="flex flex-col gap-2.5 text-[.82rem] text-[hsl(var(--muted-foreground))] leading-relaxed">
+                <div>
+                  <p className="font-semibold text-[hsl(var(--foreground))] leading-snug">
+                    NEXORA ACOUSTIC ENGINEERING SERVICES
+                  </p>
+                  <p className="mt-1">
+                    Koratty, Thrissur District,<br />
+                    Kerala, India.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-1 pt-1">
+                  <a href="mailto:info@nexoraacoustics.com" className="hover:text-[hsl(var(--accent))] transition-colors">
+                    <span className="text-[hsl(var(--foreground))] font-medium">Email: </span>info@nexoraacoustics.com
+                  </a>
+                  <a href="tel:+918590870688" className="hover:text-[hsl(var(--accent))] transition-colors">
+                    <span className="text-[hsl(var(--foreground))] font-medium">Phone: </span>+91 8590870688
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         
-        <div className="mt-12 pt-6 border-t border-[hsl(var(--border))] flex flex-col md:flex-row justify-between items-center gap-4 text-[.7rem] text-[hsl(var(--muted-foreground))] opacity-60">
+        <div className="mt-12 pt-6 border-t border-[hsl(var(--border))] flex justify-center sm:justify-between items-center text-[.7rem] text-[hsl(var(--muted-foreground))] opacity-60">
           <p>© 2026 Nexora Acoustics. All rights reserved.</p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-[hsl(var(--foreground))] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[hsl(var(--foreground))] transition-colors">Terms of Service</a>
-          </div>
         </div>
       </div>
       

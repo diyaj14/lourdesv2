@@ -500,26 +500,26 @@ export function CircularSplitRollComp({
                   {renderDetail ? (
                     renderDetail(item, index)
                   ) : item.description || item.body || item.subtitle || item.sub ? (
-                    <div className="service-card group/card h-full w-full p-6 sm:p-7 flex flex-col justify-between text-left select-none relative overflow-hidden rounded-2xl bg-[#071952] border border-[#088395]/40 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#37B7C3] hover:shadow-[0_16px_36px_-8px_rgba(7,25,82,0.55),0_0_0_1px_rgba(55,183,195,0.35)]">
+                    <div className="service-card group/card h-full w-full p-6 sm:p-7 flex flex-col justify-between text-left select-none relative overflow-hidden rounded-2xl bg-[#081b2b] border border-[#0b5d7a]/40 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#16a6b8] hover:shadow-[0_16px_36px_-8px_rgba(8,27,43,0.55),0_0_0_1px_rgba(22,166,184,0.35)]">
                       <div className="relative z-10">
-                        <h4 className="display text-lg sm:text-xl font-bold leading-snug text-[#EBF4F6] transition-colors group-hover/card:text-white">
+                        <h4 className="display text-lg sm:text-xl font-bold leading-snug text-[#f3f7f9] transition-colors group-hover/card:text-white">
                           {item.subtitle || item.sub || item.title}
                         </h4>
-                        <p className="mt-3 text-xs sm:text-[0.85rem] text-[rgba(235,244,246,0.8)] leading-relaxed">
+                        <p className="mt-3 text-xs sm:text-[0.85rem] text-[rgba(243,247,249,0.8)] leading-relaxed">
                           {item.description || item.body}
                         </p>
                       </div>
                       {(item.tags || item.tag || item.list) && (
-                        <div className="relative z-10 pt-3 border-t border-[rgba(235,244,246,0.15)]">
-                          <span className="mono text-[0.66rem] text-[rgba(235,244,246,0.85)] leading-tight block">
+                        <div className="relative z-10 pt-3 border-t border-[rgba(243,247,249,0.15)]">
+                          <span className="mono text-[0.66rem] text-[rgba(243,247,249,0.85)] leading-tight block">
                             {item.tags || item.tag || item.list}
                           </span>
                         </div>
                       )}
                     </div>
                   ) : (
-                    <div className="service-card group/card h-full w-full p-6 flex flex-col justify-center text-left relative overflow-hidden rounded-2xl bg-[#071952] border border-[#088395]/40 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#37B7C3] hover:shadow-[0_16px_36px_-8px_rgba(7,25,82,0.55),0_0_0_1px_rgba(55,183,195,0.35)]">
-                      <h4 className="display relative z-10 text-xl font-bold text-[#EBF4F6] transition-colors group-hover/card:text-white">
+                    <div className="service-card group/card h-full w-full p-6 flex flex-col justify-center text-left relative overflow-hidden rounded-2xl bg-[#081b2b] border border-[#0b5d7a]/40 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#16a6b8] hover:shadow-[0_16px_36px_-8px_rgba(8,27,43,0.55),0_0_0_1px_rgba(22,166,184,0.35)]">
+                      <h4 className="display relative z-10 text-xl font-bold text-[#f3f7f9] transition-colors group-hover/card:text-white">
                         {item.title}
                       </h4>
                     </div>
@@ -537,21 +537,21 @@ export function CircularSplitRollComp({
           {safeItems.map((item) => (
             <article
               key={item.id}
-              className={`service-card group/card p-6 sm:p-7 flex flex-col justify-between text-left relative overflow-hidden rounded-2xl bg-[#071952] border border-[#088395]/40 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#37B7C3] hover:shadow-[0_16px_36px_-8px_rgba(7,25,82,0.55),0_0_0_1px_rgba(55,183,195,0.35)] ${gridCardClassName}`}
+              className={`service-card group/card p-6 sm:p-7 flex flex-col justify-between text-left relative overflow-hidden rounded-2xl bg-[#081b2b] border border-[#0b5d7a]/40 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#16a6b8] hover:shadow-[0_16px_36px_-8px_rgba(8,27,43,0.55),0_0_0_1px_rgba(22,166,184,0.35)] ${gridCardClassName}`}
             >
               <div className="relative z-10">
-                <h3 className={`display text-xl font-bold leading-tight text-[#EBF4F6] transition-colors group-hover/card:text-white ${gridTitleClassName}`}>
+                <h3 className={`display text-xl font-bold leading-tight text-[#f3f7f9] transition-colors group-hover/card:text-white ${gridTitleClassName}`}>
                   {item.subtitle || item.sub || item.title}
                 </h3>
                 {(item.description || item.body) && (
-                  <p className="mt-3 text-sm text-[rgba(235,244,246,0.8)] leading-relaxed">
+                  <p className="mt-3 text-sm text-[rgba(243,247,249,0.8)] leading-relaxed">
                     {item.description || item.body}
                   </p>
                 )}
               </div>
               {(item.tags || item.tag || item.list) && (
-                <div className="relative z-10 mt-4 pt-3 border-t border-[rgba(235,244,246,0.15)]">
-                  <span className="mono text-xs text-[rgba(235,244,246,0.85)]">
+                <div className="relative z-10 mt-4 pt-3 border-t border-[rgba(243,247,249,0.15)]">
+                  <span className="mono text-xs text-[rgba(243,247,249,0.85)]">
                     {item.tags || item.tag || item.list}
                   </span>
                 </div>

@@ -23,7 +23,7 @@ import { TiltCard } from '@/components/ui/tilt-card';
 import { cn } from '@/lib/utils';
 import { V3AccordionCard } from '@/components/ui/services-versions';
 const queryClient = new QueryClient();
-const auditorium = '/assets/nexora-acoustic-hero.webp';
+const auditorium = '/assets/futuristic-teal-concert-hall-piano.webp';
 
 const services = [
   {
@@ -45,7 +45,7 @@ const services = [
       'Impact sound insulation',
       'Façade acoustic assessment'
     ],
-    pointerColor: '#071952' // Deep Navy Blue
+    pointerColor: '#081b2b' // Deep Navy
   },
   {
     id: 2,
@@ -71,7 +71,7 @@ const services = [
       'Breakout noise assessment',
       'Outdoor noise assessment.'
     ],
-    pointerColor: '#088395' // Deep Teal
+    pointerColor: '#0b5d7a' // Nexora Blue
   },
   {
     id: 3,
@@ -91,7 +91,7 @@ const services = [
       'Noise mitigation',
       'Sound transmission analysis'
     ],
-    pointerColor: '#37B7C3' // Light Teal / Cyan
+    pointerColor: '#16a6b8' // Nexora Cyan
   },
   {
     id: 4,
@@ -111,7 +111,7 @@ const services = [
       'Background noise measurement',
       'Room acoustic assessment'
     ],
-    pointerColor: '#EBF4F6' // Ice White
+    pointerColor: '#f3f7f9' // Nexora Light
   }
 ];
 
@@ -203,7 +203,7 @@ function Logo({ inverted = false }: { inverted?: boolean }) {
   return (
     <a href="#home" className="flex items-center" data-testid="link-logo">
       <div 
-        className={`h-6 sm:h-7 md:h-8 w-48 sm:w-56 ${inverted ? 'bg-white' : 'bg-[hsl(var(--primary))]'}`}
+        className={`h-6 sm:h-7 md:h-8 w-48 sm:w-56 ${inverted ? 'bg-white' : 'bg-[#16a6b8]'}`}
         style={{ 
           maskImage: 'url(/logo.png)', 
           WebkitMaskImage: 'url(/logo.png)', 
@@ -339,7 +339,7 @@ function Hero() {
 
           {/* Mobile responsive image display */}
           <div className="mt-8 relative w-full h-[280px] sm:h-[380px] overflow-hidden rounded-2xl lg:hidden">
-            <img src={auditorium} alt="World-class acoustic auditorium with curved timber sound diffusion architecture" className="cinematic-img h-full w-full object-cover object-center scale-[1.01]" referrerPolicy="no-referrer" data-testid="img-hero-auditorium-mobile" />
+            <img src={auditorium} alt="Futuristic teal concert hall with grand piano and sound diffusion architecture" className="cinematic-img h-full w-full object-cover object-center scale-[1.01]" referrerPolicy="no-referrer" data-testid="img-hero-auditorium-mobile" />
             <div className="absolute bottom-4 left-4 flex items-center gap-2.5 bg-[hsl(var(--background)/92%)] backdrop-blur-sm px-3 py-1.5 border border-[hsl(var(--border))] rounded-lg">
               <span className="h-2 w-2 rounded-full bg-[hsl(var(--accent))]" />
               <span className="mono text-[.55rem]">Sound, shaped by space</span>
@@ -349,7 +349,7 @@ function Hero() {
         
         {/* Desktop right-aligned image as a rounded floating card */}
         <div className="hidden lg:block lg:col-span-6 xl:col-span-6 relative h-[55vh] min-h-[450px] max-h-[700px] mt-6 lg:mt-10 xl:mt-14 -ml-4 -mr-4 lg:-ml-8 lg:-mr-6 xl:-ml-10 xl:-mr-8 rounded-[2rem] overflow-hidden bg-transparent">
-          <img src={auditorium} alt="World-class acoustic auditorium" className="hero-image cinematic-img h-full w-full object-cover object-center scale-[1.01]" referrerPolicy="no-referrer" data-testid="img-hero-auditorium" />
+          <img src={auditorium} alt="Futuristic teal concert hall with grand piano and sound diffusion architecture" className="hero-image cinematic-img h-full w-full object-cover object-center scale-[1.01]" referrerPolicy="no-referrer" data-testid="img-hero-auditorium" />
           <div className="absolute bottom-6 right-6 flex items-center gap-3 bg-[hsl(var(--background)/92%)] backdrop-blur-md px-4 py-2 rounded-xl border border-[hsl(var(--border))] text-[hsl(var(--foreground))] shadow-md">
             <span className="h-2 w-2 rounded-full bg-[hsl(var(--accent))]" />
             <span className="mono text-[.58rem]">Sound, shaped by space</span>
@@ -674,7 +674,7 @@ function Footer() {
   return (
     <footer className="relative flex flex-col items-center justify-center overflow-hidden bg-[hsl(var(--primary))] pt-24 md:pt-32 pb-0 text-[hsl(var(--primary-foreground))]">
       <div 
-        className="container-nx relative z-10 w-full rounded-[32px] bg-[hsl(var(--background))] p-8 md:pt-10 md:px-12 md:pb-6 text-[hsl(var(--foreground))] shadow-[0_40px_100px_rgba(7,25,82,0.25),0_15px_40px_rgba(7,25,82,0.15)]"
+        className="container-nx relative z-10 w-full rounded-[32px] bg-[hsl(var(--background))] p-8 md:pt-10 md:px-12 md:pb-6 text-[hsl(var(--foreground))] shadow-[0_40px_100px_rgba(8,27,43,0.25),0_15px_40px_rgba(8,27,43,0.15)]"
       >
         
         {/* Top CTA Banner */}

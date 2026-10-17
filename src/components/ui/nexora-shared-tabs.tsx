@@ -47,7 +47,7 @@ export function NexoraSharedTabs() {
       {/* Interactive Dot Particle canvas effect inside the box (hover effect only) */}
       <DotParticleCanvas
         backgroundColor="transparent"
-        particleColor="7, 25, 82"
+        particleColor="8, 27, 43"
         animationSpeed={0.006}
       />
 

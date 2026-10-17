@@ -48,57 +48,57 @@ export type ArrowFillButtonProps = ArrowFillButtonOwnProps &
     keyof ArrowFillButtonOwnProps
   >;
 
-// Website-aligned color presets matching Nexora Acoustic navy blue and white theme
+// Website-aligned color presets matching Nexora Acoustic theme
 const VARIANT_COLORS = {
   primary: {
-    bgColor: "#071952", // Deep navy blue
-    textColor: "#EBF4F6", // Crisp white
-    fillBgColor: "#EBF4F6", // Crisp white indicator circle surrounding arrow
-    fillTextColor: "#071952", // Deep navy arrow
-    hoverFillBgColor: "#EBF4F6", // Crisp white expands to fill button on hover
-    hoverFillTextColor: "#071952", // Deep navy text on hover
-    arrowColor: "#071952", // Deep navy arrow icon
-    hoverArrowColor: "#071952",
+    bgColor: "#16a6b8", // Exact cyan/teal from button swatch
+    textColor: "#ffffff", // Crisp white text
+    fillBgColor: "#081b2b", // Deep navy circle surrounding arrow
+    fillTextColor: "#ffffff", // White arrow icon
+    hoverFillBgColor: "#081b2b", // Deep navy expands on hover
+    hoverFillTextColor: "#ffffff", // White text on hover
+    arrowColor: "#ffffff",
+    hoverArrowColor: "#ffffff",
   },
   default: {
-    bgColor: "#071952",
-    textColor: "#EBF4F6",
-    fillBgColor: "#EBF4F6",
-    fillTextColor: "#071952",
-    hoverFillBgColor: "#EBF4F6",
-    hoverFillTextColor: "#071952",
-    arrowColor: "#071952",
-    hoverArrowColor: "#071952",
+    bgColor: "#16a6b8",
+    textColor: "#ffffff",
+    fillBgColor: "#081b2b",
+    fillTextColor: "#ffffff",
+    hoverFillBgColor: "#081b2b",
+    hoverFillTextColor: "#ffffff",
+    arrowColor: "#ffffff",
+    hoverArrowColor: "#ffffff",
   },
   copper: {
-    bgColor: "#088395", // Deep ocean teal
-    textColor: "#EBF4F6",
-    fillBgColor: "#EBF4F6",
-    fillTextColor: "#088395",
-    hoverFillBgColor: "#37B7C3", // Light cyan on hover
-    hoverFillTextColor: "#071952",
-    arrowColor: "#088395",
-    hoverArrowColor: "#071952",
+    bgColor: "#0b5d7a", // Nexora blue
+    textColor: "#ffffff",
+    fillBgColor: "#081b2b",
+    fillTextColor: "#ffffff",
+    hoverFillBgColor: "#16a6b8",
+    hoverFillTextColor: "#ffffff",
+    arrowColor: "#ffffff",
+    hoverArrowColor: "#ffffff",
   },
   accent: {
-    bgColor: "#088395", // Deep ocean teal
-    textColor: "#EBF4F6",
-    fillBgColor: "#EBF4F6",
-    fillTextColor: "#088395",
-    hoverFillBgColor: "#37B7C3",
-    hoverFillTextColor: "#071952",
-    arrowColor: "#088395",
-    hoverArrowColor: "#071952",
+    bgColor: "#16a6b8",
+    textColor: "#ffffff",
+    fillBgColor: "#081b2b",
+    fillTextColor: "#ffffff",
+    hoverFillBgColor: "#081b2b",
+    hoverFillTextColor: "#ffffff",
+    arrowColor: "#ffffff",
+    hoverArrowColor: "#ffffff",
   },
   quiet: {
-    bgColor: "#EBF4F6", // Pale icy white surface
-    textColor: "#071952", // Deep navy text
-    fillBgColor: "#071952", // Navy circle surrounding arrow
-    fillTextColor: "#EBF4F6", // White arrow
-    hoverFillBgColor: "#071952", // Deep navy expands on hover
-    hoverFillTextColor: "#EBF4F6", // Crisp white text on hover
-    arrowColor: "#EBF4F6",
-    hoverArrowColor: "#EBF4F6",
+    bgColor: "rgba(255, 255, 255, 0.4)",
+    textColor: "#081b2b",
+    fillBgColor: "#081b2b",
+    fillTextColor: "#ffffff",
+    hoverFillBgColor: "#081b2b",
+    hoverFillTextColor: "#ffffff",
+    arrowColor: "#081b2b",
+    hoverArrowColor: "#ffffff",
   },
 };
 
